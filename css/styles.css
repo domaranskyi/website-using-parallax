@@ -1,0 +1,134 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+hr {
+    background-color: rgba(241, 173, 29, 1);
+    min-height: 3px;
+    width:50px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    font-weight: bold;
+}
+.big-rectangle {
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 8%;
+    color: rgba(255, 255, 255, 1);
+    border: white solid 1px;
+    font-weight: bold;
+    font-size: 54px;
+    text-transform: uppercase;
+    
+}
+.white-square {
+padding: 50px;
+background-color: rgba(255, 255, 255, 1);
+color: #F1AD1D;
+}
+.small-rectangle {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.30196078431372547);
+}
+.img-logo {
+    display: inline-block;
+    padding: 15px;
+}
+.hr-white {
+    height: 3px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 1);
+}
+section {
+    vertical-align: middle;
+}
+section>p {
+    color: #4D4943;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.section-h2 {
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    padding-top:150px;
+}
+.img-h2 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+.golden-words {
+    color: rgba(241, 173, 29, 1);
+}
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+    */
+    background-attachment: fixed;
+}
+.pimg1 {
+    background-image: url(../img/bg1.jpg);
+    min-height: 100%;
+}
+.pimg2 {
+    background-image: url(../img/bg2.jpg);
+    min-height: 400px;
+}
+.pimg3 {
+    background-image: url(../img/bg3.jpg);
+    min-height: 400px;
+}
+.pimg4 {
+    background-image: url(../img/bg4.jpg);
+    min-height: 400px;
+}
+
+.section    {
+    height: 400px;
+    text-align: center;
+}
+.ptext {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+    color: #4D4943;
+
+}
+.higher { top: 30%;}
+.first {
+    line-height: 40px;
+    position: absolute;
+    left: 8%;
+    text-align: left;
+    top: 55%;
+}
+@media (max-width:568px){
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+        background-attachment: scroll;
+    }
+}
+
+/* it's done so that when the page opened from a mobile phone
+the parallax effect if off, often times it does not work properly */
